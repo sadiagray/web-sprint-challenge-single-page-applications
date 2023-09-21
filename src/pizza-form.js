@@ -74,7 +74,7 @@ export default function Pizza(props) {
                         </label>
                         <div className="sauce-wrapper">
                             <h3>Choose a sauce:</h3>
-                                <label> Original Marinara
+                                
                                     <input
                                     type="radio"
                                     name="sauce"
@@ -82,8 +82,8 @@ export default function Pizza(props) {
                                     onChange={onChange}
                                     checked={values.sauce === "Original Marinara"}
                                     />
-                                </label>
-                                <label> BBQ
+                                <label> Original Marinara </label>
+                                
                                     <input
                                     type="radio"
                                     name="sauce"
@@ -91,8 +91,8 @@ export default function Pizza(props) {
                                     onChange={onChange}
                                     checked={values.sauce === "BBQ"}
                                     />
-                                </label>
-                                <label> Garlic Parm
+                                <label> BBQ </label>
+                                
                                     <input
                                     type="radio"
                                     name="sauce"
@@ -100,8 +100,8 @@ export default function Pizza(props) {
                                     onChange={onChange}
                                     checked={values.sauce === "Garlic Parm"}
                                     />
-                                </label>
-                                <label> Buffalo
+                                <label> Garlic Parm </label>
+                                
                                     <input
                                     type="radio"
                                     name="sauce"
@@ -109,61 +109,61 @@ export default function Pizza(props) {
                                     onChange={onChange}
                                     checked={values.sauce === "Buffalo"}
                                     />
-                                </label>
+                               <label> Buffalo </label>
                         </div>
                         <div className="toppings">
                             <h3>Select your toppings:</h3>
-                            <label>Pepperoni
+                            
                                 <input
                                     type="checkbox"
                                     name="pepperoni"
                                     checked={values.pepperoni}
                                     onChange={onChange}
                                 />
-                            </label>
-                            <label>Sausage
+                            <label>Pepperoni </label>
+                            
                                 <input
                                     type="checkbox"
                                     name="sausage"
                                     checked={values.sausage}
                                     onChange={onChange}
                                 />
-                            </label>
-                            <label>Bacon
+                            <label>Sausage </label>
+                            
                                 <input
                                     type="checkbox"
                                     name="bacon"
                                     checked={values.bacon}
                                     onChange={onChange}
                                 />
-                            </label>
-                            <label>Mushrooms
+                            <label>Bacon </label>
+                            
                                 <input
                                     type="checkbox"
                                     name="mushrooms"
                                     checked={values.mushrooms}
                                     onChange={onChange}
                                 />
-                            </label>
-                            <label>Extra Cheese
+                            <label>Mushrooms </label>
+                            
                                 <input
                                     type="checkbox"
                                     name="extraCheese"
                                     checked={values.extraCheese}
                                     onChange={onChange}
                                 />
-                            </label>
+                            <label>Extra Cheese </label>
                         </div>
                         <div className="substitutes">
                             <h3>Make a substitute:</h3>
-                            <label>Gluten Free Crust (+ $1.00)
+                            
                                 <input
                                     name="gluten"
                                     type='checkbox'
                                     checked={values.gluten}
                                     onChange={onChange}
                                 />
-                            </label>
+                            <label>Gluten Free Crust (+ $1.00)</label>
                         </div>
                         <div className="special-instructions">
                             <h3>Special Instructions - Anything else you'd like to add?</h3>

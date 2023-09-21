@@ -131,7 +131,7 @@ const App = () => {
           disabled={disabled}
           errors={formErrors}
           reset={reset}/>} />
-      <Route path="/confirmation" element={
+      <Route path="/confirm" element={
         <Confirmation orders={orders} clear={clearOrders}/>}
       />
     </Routes>
