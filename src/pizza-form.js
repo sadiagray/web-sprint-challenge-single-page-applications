@@ -13,7 +13,7 @@ export default function Pizza(props) {
 
     const navigate = useNavigate()
     const routeToConfirm = () => {
-        navigate.push('/confirm')
+        navigate('/confirm')
     }
 
     const onSubmit = evt => {

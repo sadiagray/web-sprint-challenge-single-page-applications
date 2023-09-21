@@ -33,6 +33,8 @@ const formSchema = yup.object().shape({
     gluten: yup
      .string()
      .notRequired(),
+    special: yup
+    .string()
 })
 
 const initialFormValues = {
@@ -119,21 +121,19 @@ const App = () => {
 
   return (
     <Routes>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/pizza">
+      <Route path="/" element={<Home />} />
+        
+      <Route path="/pizza" element={
         <Pizza
           values={formValues}
           change={updateForm}
           submit={submitOrder}
           disabled={disabled}
           errors={formErrors}
-          reset={reset}/>
-      </Route>
-      <Route path="/confirmation">
-        <Confirmation orders={orders} clear={clearOrders}/>
-      </Route>
+          reset={reset}/>} />
+      <Route path="/confirmation" element={
+        <Confirmation orders={orders} clear={clearOrders}/>}
+      />
     </Routes>
   );
 };

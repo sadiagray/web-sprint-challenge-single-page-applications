@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Orders from "./Orders";
+import Order from "./Order";
 
 function Confirmation(props) {
     const { orders, clear } = props
@@ -20,7 +20,7 @@ function Confirmation(props) {
                 {
                     orders.map(order =>{
                         return ( 
-                            <Orders key={orders.id} details={order}/>
+                            <Order key={orders.id} details={order}/>
                         )
                     })
                 }

@@ -6,7 +6,7 @@ function Home() {
     const navigate = useNavigate()
     const handleClick = e => {
       console.log(e.currentTarget.id);
-      navigate.push('/pizza')
+      navigate('/pizza')
     };
 
   return (
